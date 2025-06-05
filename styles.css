@@ -21,7 +21,6 @@ h1 {
 .separator-img-container {
   display: flex;
   justify-content: center;
-  margin: 15px 0px;
 }
 
 .article-images-container {
@@ -76,11 +75,12 @@ footer {
   color: #4d5562;
   font-weight: 500;
   font-size: 0.875rem;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 footer a {
-  text-decoration: none;
+  text-decoration: underline; /* Make links visually distinct */
+  color: #4d5562;
 }
 
 @media (max-width: 640px) {
