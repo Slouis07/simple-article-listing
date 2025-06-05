@@ -1,0 +1,103 @@
+body {
+  background: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /*makes sure the body fills the screen so centering works, gives the body enough height to make vertical centering possible. */
+  justify-content: center; /*centers the content to the middle of the page (vertically) */
+}
+
+h1 {
+  color: #000000;
+  font-family: Poppins, "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.break-tech {
+  display: block; /*so 'technology' starts on new line */
+}
+
+.separator-img-container {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px;
+}
+
+.article-images-container {
+  display: flex;
+  border-radius: 5px;
+  align-items: center; /* Keeps images & text lined up at the same height in the middle */
+  gap: 20px; /*leaves space between the image and text.*/
+  max-width: 750px; /* limits the width allowing margin: auto; to calculate equal spacing on both sides and center it cleanly.*/
+  margin: 20px auto; /*adds vertical spacing(top/bottom) and center the container horizontally*/
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s,
+    padding 0.3s; /*transition for lift effect*/
+}
+
+.article-images-container:hover {
+  background-color: rgb(222, 166, 229);
+  padding: 10px; /* Adds space inside the container, keeping content from touching the edges, giving it expansion vibes on hover */
+  transform: scale(
+    1.025
+  ); /*102.5% of its original size, so it gets slightly bigger*/
+  box-shadow: 0 8px 24px rgba(243, 101, 6, 0.4); /*adds a glowy shadow to make it look 2d*/
+}
+
+.article-images {
+  border-radius: 7%;
+  width: 150px;
+}
+
+.article-text {
+  color: #000000;
+  font-family: Poppins, "Arial", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 4px; /* Small space below title */
+}
+
+.article-content {
+  display: flex;
+  flex-direction: column; /*makes the article text and article date go vertically instead of side by side row format*/
+  /*align-items: flex-start is the default so the text positioning is already good*/
+}
+
+.article-date {
+  color: #4d5562;
+  font-family: Poppins, "Arial", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+footer {
+  font-family: Poppins, Courier, monospace;
+  text-align: center;
+  color: #4d5562;
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin-top: 5%;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .article-images-container {
+    gap: 10px;
+    max-width: 85%;
+  }
+}
+@media (max-width: 640px) {
+  .break-tech {
+    display: inline;
+  }
+}
+
+@media (max-width: 1024px) {
+  .article-images-container {
+    gap: 10px;
+    max-width: 85%;
+  }
+}

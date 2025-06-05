@@ -1,11 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Article Listing</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>
+        We release interesting articles about<span class="break-tech">
+          technology</span
+        >
+      </h1>
+    </header>
+    <div class="separator-img-container">
+      <img src="assets/Seperator.svg" alt="separator icon" />
+    </div>
+
+    <main>
+      <article class="article-images-container">
+        <img
+          class="article-images"
+          src="assets/photo_1.png"
+          srcset="assets/photo_1@2x.png 2x"
+          alt="Cloud Computing Image"
+        />
+        <div class="article-content">
+          <h2 class="article-text">
+            Unlocking the Power of Cloud Computing: A Guide to Scalable
+            Solutions
+          </h2>
+          <div class="article-date">
+            <time datetime="2024-11-12">November 12, 2024</time>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-images-container">
+        <img
+          class="article-images"
+          src="assets/photo_3.png"
+          srcset="assets/photo_3@2x.png 2x"
+          alt="Machine Learning Image"
+        />
+        <div class="article-content">
+          <h2 class="article-text">
+            The Future of AI: How Machine Learning is Revolutionizing Industries
+          </h2>
+          <div class="article-date">
+            <time datetime="2024-11-12">November 12, 2024</time>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-images-container">
+        <img
+          class="article-images"
+          src="assets/photo_2.png"
+          srcset="assets/photo_2@2x.png 2x"
+          alt="5g Image"
+        />
+
+        <div class="article-content">
+          <h2 class="article-text">
+            The Impact of 5G on Business: How Faster Networks are Transforming
+            the Way We Work
+          </h2>
+          <div class="article-date">
+            <time datetime="2024-11-12">November 12, 2024</time>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <p>
+        Coded by <strong>Severine Louis</strong> | Challenge by
+        <a
+          href="https://devchallenges.io/challenge/simple-article-listing"
+          target="_blank"
+          >devChallenges.io.</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
